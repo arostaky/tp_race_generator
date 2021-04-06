@@ -7,7 +7,7 @@ class pathCreator():
     def createPath(self):
         curva = cmds.select('curve1')
         closedCurve = cmds.closeCurve( 'curve1', ch=True, ps=False, rpo = True )
-        plano = cmds.polyPlane(sx=1,sy=1, n='rue',w=1,h=7)
+        plano = cmds.polyPlane(sx=1,sy=1, n='rue',w=1,h=4)
         enterCurva = cmds.xform('curve1.cv[0]', q=True, t=True)
         #enterAcurva = cmds.xform('curve1.cv[0]',q=True, rp=True)
         #print('dime la rotation: ')

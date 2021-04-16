@@ -12,7 +12,8 @@ class carCreator():
     print(randomSelection)
     @classmethod
     def createCar(self):
-        couper = cmds.file(sc +tpFolder+'/ma/mercedes_rig.ma', i = True)
+        mercedes = cmds.file(sc +tpFolder+'/fbx/mercedes_rig.fbx', i = True, type='fbx')
+        
     @classmethod
     def animateCar(self):
         cmds.pathAnimation('ctrl_Car_python', c='curve1', stu = 0, etu = 120, f = False, fa='Z' )
@@ -26,4 +27,3 @@ class carCreator():
 # setAttr "motionPath1.worldUpType" 0;
 # setAttr "motionPath1.upAxis" 1;
 #
-#----------------

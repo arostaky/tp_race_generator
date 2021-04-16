@@ -12,6 +12,8 @@ class carCreator():
     @classmethod
     def animateCar(self):
         cmds.pathAnimation('ctrl_Car_python', c='curve1', stu = 0, etu = 120, f = False, fa='Z' )
+        cmds.keyTangent( 'motionPath1_uValue', ott='linear', itt='linear' )
+        #meter random!
         cmds.setAttr('motionPath1.worldUpType',0)
         cmds.setAttr('motionPath1.upAxis', 1)
 

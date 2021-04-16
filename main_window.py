@@ -1,7 +1,7 @@
 import maya.cmds as cmds
 import sys
-sc = cmds.internalVar(userScriptDir=True)
 cmds.file(f=True, new=True)
+sc = cmds.internalVar(userScriptDir=True)
 sys.path.append(sc+ '/tp_race_generator')
 
 from lib import test, curve, car

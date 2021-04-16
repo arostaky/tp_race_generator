@@ -1,10 +1,10 @@
 # -*- coding: UTF-8 -*-
-import random
 import maya.cmds as cmds
-
+import random
 sc = cmds.internalVar(userScriptDir=True)
+tpFolder = '/tp_race_generator'
 #étape 1: create a path, e,g, a curve
-#print(sc+'tp_race_generator/fbx/couper.fbx')
+
  
 class carCreator():
     listNumbers = list(range(250))
@@ -12,8 +12,7 @@ class carCreator():
     print(randomSelection)
     @classmethod
     def createCar(self):
-        couper = cmds.file(sc +'tp_race_generator/ma/mercedes_rig.ma', i = True)
-        # cmds.scale(0.1,0.1,0.1, 'Car_Python', ws=True, a=True)
+        couper = cmds.file(sc +tpFolder+'/ma/mercedes_rig.ma', i = True)
     @classmethod
     def animateCar(self):
         cmds.pathAnimation('ctrl_Car_python', c='curve1', stu = 0, etu = 120, f = False, fa='Z' )

@@ -40,6 +40,11 @@ class carCreator():
             cmds.file(sc +tpFolder+'/fbx/Muscle_rig.fbx', i = True, type='fbx')
             cmds.rename('Grp_Car_Muscle', str(car3))
     @classmethod
+    def createMeta(self):
+        cmds.file(sc+tpFolder+'/fbx/meta.fbx', i=True, type='fbx')
+        enterCurva = cmds.xform('curve1.cv[0]', q=True, t=True)
+        cmds.move(enterCurva[0],enterCurva[1],enterCurva[2])
+    @classmethod
     def animateCars(self):
         #car 1:
         cmds.pathAnimation('ctrl_Car_python', c='curve1', stu = 0, etu = randomSelection1, f = False, fa='Z' )
@@ -61,6 +66,7 @@ class carCreator():
         self.createCarOne()
         self.createCarTwo()
         self.createCarThree()
+        self.createMeta()
         self.animateCars()
 
 #    car2 = cmds.textField('NameCar2', q=True, text=True)

@@ -40,7 +40,7 @@ class pathCreator():
             off2 = cmds.offsetCurve('curve1',d=2.0)
             off3 = cmds.offsetCurve('curve1',d=4.0)
 
-        plano = cmds.polyPlane(sx=1,sy=1, n='rue',w=1,h=4*(amountCars/1.6)) #h variable de ancho segun cantidad de carros
+        plano = cmds.polyPlane(sx=1,sy=1, n='rue',w=1,h=4*(amountCars/1.6)) #h variable width according to the amount of cars
         
         enterCurva = cmds.xform('curve1.cv[0]', q=True, t=True)
         cmds.move(enterCurva[0],enterCurva[1],enterCurva[2])

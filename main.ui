@@ -220,8 +220,8 @@ border-radius: 10px;</string>
    <widget class="QPushButton" name="SelectButt">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>178</y>
+      <x>250</x>
+      <y>180</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -250,8 +250,8 @@ QPushButton:hover
    <widget class="QPushButton" name="EraseButt">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>178</y>
+      <x>370</x>
+      <y>870</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -274,8 +274,8 @@ QPushButton:hover
    <widget class="QPushButton" name="CreateButt">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>178</y>
+      <x>50</x>
+      <y>870</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -432,75 +432,12 @@ rgb(133, 213, 246);
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>155</x>
-      <y>310</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QLabel:hover{
-background-color:
-rgb(133, 213, 246);
-
-}</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>310</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QLabel:hover{
-background-color:
-rgb(133, 213, 246);
-
-}</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>310</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QLabel:hover{
-background-color:
-rgb(133, 213, 246);
-
-}</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QSlider" name="CarSlider_1">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>30</x>
       <y>382</y>
-      <width>391</width>
+      <width>441</width>
       <height>20</height>
      </rect>
     </property>
@@ -562,10 +499,10 @@ border-radius: 4px;
      <number>1</number>
     </property>
     <property name="maximum">
-     <number>4</number>
+     <number>5</number>
     </property>
     <property name="value">
-     <number>1</number>
+     <number>2</number>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
@@ -591,7 +528,7 @@ color:rgb(133, 213, 246);</string>
      <string/>
     </property>
     <property name="text">
-     <string/>
+     <string>Car1</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -629,33 +566,12 @@ rgb(133, 213, 246);
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>460</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QLabel:hover{
-background-color:
-rgb(133, 213, 246);
-
-}</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QSlider" name="CarSlider_2">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>30</x>
       <y>530</y>
-      <width>391</width>
+      <width>441</width>
       <height>22</height>
      </rect>
     </property>
@@ -717,7 +633,7 @@ border-radius: 4px;
      <number>1</number>
     </property>
     <property name="maximum">
-     <number>4</number>
+     <number>5</number>
     </property>
     <property name="value">
      <number>1</number>
@@ -757,90 +673,6 @@ border-radius: 10px;</string>
     </property>
     <property name="indent">
      <number>-1</number>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_7">
-    <property name="geometry">
-     <rect>
-      <x>155</x>
-      <y>460</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QLabel:hover{
-background-color:
-rgb(133, 213, 246);
-
-}</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_8">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>460</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QLabel:hover{
-background-color:
-rgb(133, 213, 246);
-
-}</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_12">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>610</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QLabel:hover{
-background-color:
-rgb(133, 213, 246);
-
-}</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_10">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>610</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QLabel:hover{
-background-color:
-rgb(133, 213, 246);
-
-}</string>
-    </property>
-    <property name="text">
-     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="label_9">
@@ -902,9 +734,9 @@ border-radius: 10px;</string>
    <widget class="QSlider" name="CarSlider_3">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>30</x>
       <y>680</y>
-      <width>391</width>
+      <width>441</width>
       <height>22</height>
      </rect>
     </property>
@@ -966,76 +798,13 @@ border-radius: 4px;
      <number>1</number>
     </property>
     <property name="maximum">
-     <number>4</number>
+     <number>5</number>
     </property>
     <property name="value">
      <number>1</number>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>155</x>
-      <y>610</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QLabel:hover{
-background-color:
-rgb(133, 213, 246);
-
-}</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_16">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>760</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QLabel:hover{
-background-color:
-rgb(133, 213, 246);
-
-}</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_15">
-    <property name="geometry">
-     <rect>
-      <x>155</x>
-      <y>760</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QLabel:hover{
-background-color:
-rgb(133, 213, 246);
-
-}</string>
-    </property>
-    <property name="text">
-     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="Title_9">
@@ -1074,9 +843,9 @@ border-radius: 10px;</string>
    <widget class="QSlider" name="CarSlider_4">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>30</x>
       <y>830</y>
-      <width>391</width>
+      <width>441</width>
       <height>22</height>
      </rect>
     </property>
@@ -1138,34 +907,13 @@ border-radius: 4px;
      <number>1</number>
     </property>
     <property name="maximum">
-     <number>4</number>
+     <number>5</number>
     </property>
     <property name="value">
      <number>1</number>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_14">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>760</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QLabel:hover{
-background-color:
-rgb(133, 213, 246);
-
-}</string>
-    </property>
-    <property name="text">
-     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="label_13">
@@ -1208,7 +956,7 @@ color:rgb(133, 213, 246)</string>
      <string/>
     </property>
     <property name="text">
-     <string/>
+     <string>Car2</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1240,7 +988,7 @@ color:rgb(133, 213, 246);</string>
      <string/>
     </property>
     <property name="text">
-     <string/>
+     <string>Car3</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1272,7 +1020,7 @@ color:rgb(133, 213, 246)</string>
      <string/>
     </property>
     <property name="text">
-     <string/>
+     <string>Car4</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1309,6 +1057,377 @@ QPushButton:hover
     </property>
     <property name="text">
      <string>RACE !</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>310</y>
+      <width>72</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>imgs/iconos/mercedes_72.jpg</normaloff>imgs/iconos/mercedes_72.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>72</width>
+      <height>72</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>310</y>
+      <width>72</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>imgs/iconos/coupe_72.jpg</normaloff>imgs/iconos/coupe_72.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>72</width>
+      <height>72</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>310</y>
+      <width>72</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="imgs/iconos/camaro_72.jpg">
+      <normaloff>imgs/iconos/muscle_72.jpg</normaloff>imgs/iconos/muscle_72.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>72</width>
+      <height>72</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>310</y>
+      <width>72</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="imgs/iconos/camaro_72.jpg">
+      <normaloff>imgs/iconos/camaro_72.jpg</normaloff>imgs/iconos/camaro_72.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>72</width>
+      <height>72</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>460</y>
+      <width>72</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="imgs/iconos/camaro_72.jpg">
+      <normaloff>imgs/iconos/camaro_72.jpg</normaloff>imgs/iconos/camaro_72.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>72</width>
+      <height>72</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>460</y>
+      <width>72</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>imgs/iconos/coupe_72.jpg</normaloff>imgs/iconos/coupe_72.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>72</width>
+      <height>72</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>460</y>
+      <width>72</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>imgs/iconos/mercedes_72.jpg</normaloff>imgs/iconos/mercedes_72.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>72</width>
+      <height>72</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>460</y>
+      <width>72</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="imgs/iconos/camaro_72.jpg">
+      <normaloff>imgs/iconos/muscle_72.jpg</normaloff>imgs/iconos/muscle_72.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>72</width>
+      <height>72</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>610</y>
+      <width>72</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="imgs/iconos/camaro_72.jpg">
+      <normaloff>imgs/iconos/camaro_72.jpg</normaloff>imgs/iconos/camaro_72.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>72</width>
+      <height>72</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_10">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>610</y>
+      <width>72</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>imgs/iconos/coupe_72.jpg</normaloff>imgs/iconos/coupe_72.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>72</width>
+      <height>72</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_11">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>610</y>
+      <width>72</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>imgs/iconos/mercedes_72.jpg</normaloff>imgs/iconos/mercedes_72.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>72</width>
+      <height>72</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_12">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>610</y>
+      <width>72</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="imgs/iconos/camaro_72.jpg">
+      <normaloff>imgs/iconos/muscle_72.jpg</normaloff>imgs/iconos/muscle_72.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>72</width>
+      <height>72</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_13">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>760</y>
+      <width>72</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="imgs/iconos/camaro_72.jpg">
+      <normaloff>imgs/iconos/camaro_72.jpg</normaloff>imgs/iconos/camaro_72.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>72</width>
+      <height>72</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_14">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>760</y>
+      <width>72</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>imgs/iconos/coupe_72.jpg</normaloff>imgs/iconos/coupe_72.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>72</width>
+      <height>72</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_15">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>760</y>
+      <width>72</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>imgs/iconos/mercedes_72.jpg</normaloff>imgs/iconos/mercedes_72.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>72</width>
+      <height>72</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_16">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>760</y>
+      <width>72</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="imgs/iconos/camaro_72.jpg">
+      <normaloff>imgs/iconos/muscle_72.jpg</normaloff>imgs/iconos/muscle_72.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>72</width>
+      <height>72</height>
+     </size>
     </property>
    </widget>
   </widget>

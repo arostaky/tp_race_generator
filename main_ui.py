@@ -17,13 +17,3 @@ reload_it()
 i = curve.pathCreator()
 c = car.carCreator()
 ui.uiCreator()
-
-
-# def pathselector():
-#     print('algo')
-#     # cmds.deleteUI(dialog)
-#     #cmds.select('curve1')
-
-# dialog = cmds.loadUI(uiFile=sc+tpFolder+'/main.ui')
-# cmds.button("but_ins", edit=True, c="pathselector()")
-# windows = cmds.showWindow(dialog)

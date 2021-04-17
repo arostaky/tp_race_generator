@@ -5,8 +5,8 @@ sc = cmds.internalVar(userScriptDir=True)
 tpFolder = '/tp_race_generator'
 sys.path.append(sc+tpFolder)
 
-from lib import test, curve, car, ui
-modules = [test, curve, car, ui]
+from lib import curve, car, ui
+modules = [curve, car, ui]
 def reload_it():
   for sub_module in modules:
     #print ('Reloading %s' % sub_module)

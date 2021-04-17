@@ -48,14 +48,14 @@ class carCreator():
         cmds.setAttr('motionPath1.upAxis', 1)
         #car 2:
         cmds.pathAnimation('ctrl_Car_couper', c='offsetNurbsCurve1', stu = 0, etu = randomSelection2, f = False, fa='Z' )
-        cmds.keyTangent( 'motionPath1_uValue', ott='linear', itt='linear' )
-        cmds.setAttr('motionPath1.worldUpType',0)
-        cmds.setAttr('motionPath1.upAxis', 1)
+        cmds.keyTangent( 'motionPath2_uValue', ott='linear', itt='linear' )
+        cmds.setAttr('motionPath2.worldUpType',0)
+        cmds.setAttr('motionPath2.upAxis', 1)
         #car3:
         cmds.pathAnimation('ctrl_Car_Muscle', c='offsetNurbsCurve2', stu = 0, etu = randomSelection3, f = False, fa='Z' )
-        cmds.keyTangent( 'motionPath1_uValue', ott='linear', itt='linear' )
-        cmds.setAttr('motionPath1.worldUpType',0)
-        cmds.setAttr('motionPath1.upAxis', 1)
+        cmds.keyTangent( 'motionPath3_uValue', ott='linear', itt='linear' )
+        cmds.setAttr('motionPath3.worldUpType',0)
+        cmds.setAttr('motionPath3.upAxis', 1)
     @classmethod
     def createCars(self):
         self.createCarOne()

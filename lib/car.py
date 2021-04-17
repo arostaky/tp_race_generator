@@ -59,7 +59,7 @@ class carCreator():
             car4 = cmds.textField('NameCar3', q=True, text=True)
             cmds.file(sc +tpFolder+'/fbx/camaro_rig.fbx', i = True, type='fbx')
             cmds.rename('Grp_Car_Camaro', str(car4))
-            cmds.pathAnimation('ctrl_Car_Camaro', c='offsetNurbsCurve2', stu = 0, etu = randomSelection3, f = False, fa='Z' )
+            cmds.pathAnimation('ctrl_Car_Camaro', c='offsetNurbsCurve3', stu = 0, etu = randomSelection3, f = False, fa='Z' )
             cmds.keyTangent( 'motionPath4_uValue', ott='linear', itt='linear' )
             cmds.setAttr('motionPath4.worldUpType',0)
             cmds.setAttr('motionPath4.upAxis', 1)

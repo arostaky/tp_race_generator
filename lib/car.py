@@ -9,11 +9,11 @@ randomSelection2 = random.choice(listNumbers)
 randomSelection3 = random.choice(listNumbers)
 class carCreator():
 
-    #call sliders:
+    # #call sliders:
     # carSlider1 = cmds.intSlider('CarSlider_1', q=True,v=True)
-    # carSlider2 = cmds.intSlider('CarSlider_1', q=True,v=True)
-    # carSlider3 = cmds.intSlider('CarSlider_1', q=True,v=True)
-    # carSlider4 = cmds.intSlider('CarSlider_1', q=True,v=True)
+    # carSlider2 = cmds.intSlider('CarSlider_2', q=True,v=True)
+    # carSlider3 = cmds.intSlider('CarSlider_3', q=True,v=True)
+    # carSlider4 = cmds.intSlider('CarSlider_4', q=True,v=True)
     print(randomSelection1)
     @classmethod
     def createCarOne(self):
@@ -23,6 +23,10 @@ class carCreator():
             car1 = cmds.textField('NameCar1', q=True, text=True)
             cmds.file(sc +tpFolder+'/fbx/mercedes_rig.fbx', i = True, type='fbx')
             cmds.rename('Grp_Car_python', str(car1))
+            cmds.pathAnimation('ctrl_Car_python', c='curve1', stu = 0, etu = randomSelection1, f = False, fa='Z' )
+            cmds.keyTangent( 'motionPath1_uValue', ott='linear', itt='linear' )
+            cmds.setAttr('motionPath1.worldUpType',0)
+            cmds.setAttr('motionPath1.upAxis', 1)
     @classmethod
     def createCarTwo(self):
         carSlider2 = cmds.intSlider('CarSlider_2', q=True,v=True)
@@ -31,6 +35,10 @@ class carCreator():
             car2 = cmds.textField('NameCar2', q=True, text=True)
             cmds.file(sc +tpFolder+'/fbx/couper_rig.fbx', i = True, type='fbx')
             cmds.rename('Grp_Car_couper', str(car2))
+            cmds.pathAnimation('ctrl_Car_couper', c='offsetNurbsCurve1', stu = 0, etu = randomSelection2, f = False, fa='Z' )
+            cmds.keyTangent( 'motionPath2_uValue', ott='linear', itt='linear' )
+            cmds.setAttr('motionPath2.worldUpType',0)
+            cmds.setAttr('motionPath2.upAxis', 1)
     @classmethod
     def createCarThree(self):
         carSlider3 = cmds.intSlider('CarSlider_3', q=True,v=True)
@@ -39,35 +47,35 @@ class carCreator():
             car3 = cmds.textField('NameCar3', q=True, text=True)
             cmds.file(sc +tpFolder+'/fbx/Muscle_rig.fbx', i = True, type='fbx')
             cmds.rename('Grp_Car_Muscle', str(car3))
+            cmds.pathAnimation('ctrl_Car_Muscle', c='offsetNurbsCurve2', stu = 0, etu = randomSelection3, f = False, fa='Z' )
+            cmds.keyTangent( 'motionPath3_uValue', ott='linear', itt='linear' )
+            cmds.setAttr('motionPath3.worldUpType',0)
+            cmds.setAttr('motionPath3.upAxis', 1)
+    @classmethod
+    def createCarFour(self):
+        carSlider4 = cmds.intSlider('CarSlider_4', q=True,v=True)
+        print('slider car 4: ' + str(carSlider4))
+        if (carSlider4 > 1):
+            car4 = cmds.textField('NameCar3', q=True, text=True)
+            cmds.file(sc +tpFolder+'/fbx/camaro_rig.fbx', i = True, type='fbx')
+            cmds.rename('Grp_Car_Camaro', str(car4))
+            cmds.pathAnimation('ctrl_Car_Camaro', c='offsetNurbsCurve2', stu = 0, etu = randomSelection3, f = False, fa='Z' )
+            cmds.keyTangent( 'motionPath4_uValue', ott='linear', itt='linear' )
+            cmds.setAttr('motionPath4.worldUpType',0)
+            cmds.setAttr('motionPath4.upAxis', 1)
     @classmethod
     def createMeta(self):
         cmds.file(sc+tpFolder+'/fbx/meta.fbx', i=True, type='fbx')
         enterCurva = cmds.xform('curve1.cv[0]', q=True, t=True)
+        cmds.select('ctrl_meta')
         cmds.move(enterCurva[0],enterCurva[1],enterCurva[2])
-    @classmethod
-    def animateCars(self):
-        #car 1:
-        cmds.pathAnimation('ctrl_Car_python', c='curve1', stu = 0, etu = randomSelection1, f = False, fa='Z' )
-        cmds.keyTangent( 'motionPath1_uValue', ott='linear', itt='linear' )
-        cmds.setAttr('motionPath1.worldUpType',0)
-        cmds.setAttr('motionPath1.upAxis', 1)
-        #car 2:
-        cmds.pathAnimation('ctrl_Car_couper', c='offsetNurbsCurve1', stu = 0, etu = randomSelection2, f = False, fa='Z' )
-        cmds.keyTangent( 'motionPath2_uValue', ott='linear', itt='linear' )
-        cmds.setAttr('motionPath2.worldUpType',0)
-        cmds.setAttr('motionPath2.upAxis', 1)
-        #car3:
-        cmds.pathAnimation('ctrl_Car_Muscle', c='offsetNurbsCurve2', stu = 0, etu = randomSelection3, f = False, fa='Z' )
-        cmds.keyTangent( 'motionPath3_uValue', ott='linear', itt='linear' )
-        cmds.setAttr('motionPath3.worldUpType',0)
-        cmds.setAttr('motionPath3.upAxis', 1)
     @classmethod
     def createCars(self):
         self.createCarOne()
         self.createCarTwo()
         self.createCarThree()
+        self.createCarFour()
         self.createMeta()
-        self.animateCars()
 
 #    car2 = cmds.textField('NameCar2', q=True, text=True)
 #         car3 = cmds.textField('NameCar3', q=True, text=True)

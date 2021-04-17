@@ -3,16 +3,18 @@ import maya.cmds as cmds
 import random
 sc = cmds.internalVar(userScriptDir=True)
 tpFolder = '/tp_race_generator'
-
+listNumbers = list(range(250))
+randomSelection1 = random.choice(listNumbers)
+randomSelection2 = random.choice(listNumbers)
+randomSelection3 = random.choice(listNumbers)
 class carCreator():
-    listNumbers = list(range(250))
-    randomSelection = random.choice(listNumbers)
+
     #call sliders:
     # carSlider1 = cmds.intSlider('CarSlider_1', q=True,v=True)
     # carSlider2 = cmds.intSlider('CarSlider_1', q=True,v=True)
     # carSlider3 = cmds.intSlider('CarSlider_1', q=True,v=True)
     # carSlider4 = cmds.intSlider('CarSlider_1', q=True,v=True)
-    print(randomSelection)
+    print(randomSelection1)
     @classmethod
     def createCarOne(self):
         carSlider1 = cmds.intSlider('CarSlider_1', q=True,v=True)
@@ -40,17 +42,17 @@ class carCreator():
     @classmethod
     def animateCars(self):
         #car 1:
-        cmds.pathAnimation('ctrl_Car_python', c='curve1', stu = 0, etu = 120, f = False, fa='Z' )
+        cmds.pathAnimation('ctrl_Car_python', c='curve1', stu = 0, etu = randomSelection1, f = False, fa='Z' )
         cmds.keyTangent( 'motionPath1_uValue', ott='linear', itt='linear' )
         cmds.setAttr('motionPath1.worldUpType',0)
         cmds.setAttr('motionPath1.upAxis', 1)
         #car 2:
-        cmds.pathAnimation('ctrl_Car_couper', c='offsetNurbsCurve1', stu = 0, etu = 120, f = False, fa='Z' )
+        cmds.pathAnimation('ctrl_Car_couper', c='offsetNurbsCurve1', stu = 0, etu = randomSelection2, f = False, fa='Z' )
         cmds.keyTangent( 'motionPath1_uValue', ott='linear', itt='linear' )
         cmds.setAttr('motionPath1.worldUpType',0)
         cmds.setAttr('motionPath1.upAxis', 1)
         #car3:
-        cmds.pathAnimation('ctrl_Car_Muscle', c='offsetNurbsCurve2', stu = 0, etu = 120, f = False, fa='Z' )
+        cmds.pathAnimation('ctrl_Car_Muscle', c='offsetNurbsCurve2', stu = 0, etu = randomSelection3, f = False, fa='Z' )
         cmds.keyTangent( 'motionPath1_uValue', ott='linear', itt='linear' )
         cmds.setAttr('motionPath1.worldUpType',0)
         cmds.setAttr('motionPath1.upAxis', 1)

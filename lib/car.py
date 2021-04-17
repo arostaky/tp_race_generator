@@ -69,7 +69,7 @@ class carCreator():
         # enterCurva = cmds.xform('curve1.cv[0]', q=True, t=True)
         # cmds.select('ctrl_meta')
         # cmds.move(enterCurva[0],enterCurva[1],enterCurva[2])
-        cmds.pathAnimation('ctrl_meta', c='curve1', stu = 0, etu = 0, f = False )
+        cmds.pathAnimation('ctrl_meta', c='curve1', stu = 0, etu = 0, f = True, wut = 0, fa = 'Z', ua = 'Y')
         cmds.keyTangent( 'motionPath1_uValue', ott='linear', itt='linear' )
         cmds.setAttr('motionPath1.worldUpType',0)
         cmds.setAttr('motionPath1.upAxis', 1)

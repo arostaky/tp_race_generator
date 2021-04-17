@@ -39,6 +39,11 @@ class pathCreator():
             off1 = cmds.offsetCurve('curve1',d=-2.0)
             off2 = cmds.offsetCurve('curve1',d=2.0)
             off3 = cmds.offsetCurve('curve1',d=4.0)
+        if(amountCars == 5):
+            off1 = cmds.offsetCurve('curve1',d=-2.0)
+            off2 = cmds.offsetCurve('curve1',d=2.0)
+            off3 = cmds.offsetCurve('curve1',d=4.0)
+            off3 = cmds.offsetCurve('curve1',d=6.0)
 
         plano = cmds.polyPlane(sx=1,sy=1, n='rue',w=1,h=4*(amountCars/1.6)) #h variable width according to the amount of cars
         

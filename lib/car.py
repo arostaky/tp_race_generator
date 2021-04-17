@@ -3,7 +3,7 @@ import maya.cmds as cmds
 import random
 sc = cmds.internalVar(userScriptDir=True)
 tpFolder = '/tp_race_generator'
-listNumbers = list(range(250))
+listNumbers = list(range(60,120))
 randomSelection1 = random.choice(listNumbers)
 randomSelection2 = random.choice(listNumbers)
 randomSelection3 = random.choice(listNumbers)

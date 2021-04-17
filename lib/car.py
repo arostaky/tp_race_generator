@@ -66,9 +66,13 @@ class carCreator():
     @classmethod
     def createMeta(self):
         cmds.file(sc+tpFolder+'/fbx/meta.fbx', i=True, type='fbx')
-        enterCurva = cmds.xform('curve1.cv[0]', q=True, t=True)
-        cmds.select('ctrl_meta')
-        cmds.move(enterCurva[0],enterCurva[1],enterCurva[2])
+        # enterCurva = cmds.xform('curve1.cv[0]', q=True, t=True)
+        # cmds.select('ctrl_meta')
+        # cmds.move(enterCurva[0],enterCurva[1],enterCurva[2])
+        cmds.pathAnimation('ctrl_meta', c='curve1', stu = 0, etu = 0, f = False )
+        cmds.keyTangent( 'motionPath1_uValue', ott='linear', itt='linear' )
+        cmds.setAttr('motionPath1.worldUpType',0)
+        cmds.setAttr('motionPath1.upAxis', 1)
     @classmethod
     def createCars(self):
         self.createCarOne()

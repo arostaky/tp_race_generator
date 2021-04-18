@@ -39,7 +39,7 @@ class pathCreator():
         cmds.select('rue')
         cmds.rotate(0,0,'90deg')
         cmds.select( clear=True )
-        cmds.polyExtrudeFacet( 'rue.f[0]',inc='curve1', d=100,kft=1, constructionHistory=1, twist=0, thickness = 0, smoothingAngle=30, taper=1)
+        cmds.polyExtrudeFacet( 'rue.f[0]',inc='curve1', d=200,kft=1, constructionHistory=1, twist=0, thickness = 0, smoothingAngle=30, taper=1)
         cmds.polyNormal('rue.f[0:*]', nm=0)
     @classmethod
     def deleteAll(self):

@@ -49,10 +49,10 @@ class carCreator():
         self.createMotionPath(1)
     @classmethod
     def createCars(self):
-        print('este es el metodo: '+ str(self.listCarsMethod()))
+        # print('este es el metodo: '+ str(self.listCarsMethod()))
         carList = self.listCarsMethod()
-        print('que tan larga es la lista? '+str(len(carList)))
-        print('que valores hay en la lista? '+ str(carList[:]))
+        # print('que tan larga es la lista? '+str(len(carList)))
+        # print('que valores hay en la lista? '+ str(carList[:]))
 
         #remove duplicates from list:
         carCleanList = set(carList)

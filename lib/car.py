@@ -1,6 +1,7 @@
 # -*- coding: UTF-8 -*-
 import maya.cmds as cmds
 import random
+import collections
 sc = cmds.internalVar(userScriptDir=True)
 tpFolder = '/tp_race_generator'
 listNumbers = list(range(60,120))
@@ -88,29 +89,25 @@ class carCreator():
         print('que tan larga es la lista? '+str(len(carList)))
         print('que valores hay en la lista? '+ str(carList[:]))
 
-        # self.importCars(carList[0]-1,carList[0]-2)
-        for i in range(len(carList)):
-            if(carList[i] == 2):
-                self.importCars(carList[i]-1,carList[i]-2)
+        #remove duplicates from list:
+        carCleanList = set(carList)
+        cList = []
+        for x in carCleanList:
+            cList.append(x)
+        
+        #-------------------------------------
+        for i in range(len(cList)):
+            if(cList[i] == 2 ):
+                self.importCars(cList[i]-1,cList[i]-2)
                 self.createMotionPath(i+1)
-            if(carList[i] == 3):
-                self.importCars(carList[i]-1,carList[i]-2)
+            if(cList[i] == 3):
+                self.importCars(cList[i]-1,cList[i]-2)
                 self.createMotionPath(i+1)
-            if(carList[i] == 4):
-                self.importCars(carList[i]-1,carList[i]-2)
+            if(cList[i] == 4):
+                self.importCars(cList[i]-1,cList[i]-2)
                 self.createMotionPath(i+1)
-            if(carList[i] == 5):
-                self.importCars(carList[i]-1,carList[i]-2)
+            if(cList[i] == 5):
+                self.importCars(cList[i]-1,cList[i]-2)
                 self.createMotionPath(i+1)
-        # for i in range(len(carList)):
-        #     if(carList[:] == 2):
-        #         print(carList[:])
-        #         self.createCarOne(i)
-        #         print('este es i: '+str(i))
-        #     if(carList[:] == 3):
-        #         self.createCarTwo(i)
-        #     if(carList[:] == 4):
-        #         self.createCarThree(i)
-        #     if(carList[:] == 5):
-        #         self.createCarFour(i)
+        #----------------------------------------
         self.createMeta()

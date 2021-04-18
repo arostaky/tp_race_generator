@@ -1,7 +1,6 @@
 # -*- coding: UTF-8 -*-
 import maya.cmds as cmds
 import random
-import collections
 sc = cmds.internalVar(userScriptDir=True)
 tpFolder = '/tp_race_generator'
 listNumbers = list(range(60,120))
@@ -43,40 +42,6 @@ class carCreator():
         cmds.file(sc +tpFolder+filesImport[oval], i = True, type='fbx')
         cmds.rename('Grp_Car_'+carNames[oval], str(car))
         cmds.pathAnimation('ctrl_Car_'+carNames[oval], c=curveNames[oval], stu = 0, etu = randomC[oval], f = False, fa='Z' )
-        #self.createMotionPath(mval)
-
-    # @classmethod
-    # def createCarOne(self, val):
-    #     if (carSlider1 > 1):
-    #         car1 = cmds.textField('NameCar1', q=True, text=True)
-    #         cmds.file(sc +tpFolder+'/fbx/mercedes_rig.fbx', i = True, type='fbx')
-    #         cmds.rename('Grp_Car_python', str(car1))
-    #         cmds.pathAnimation('ctrl_Car_python', c='curve1', stu = 0, etu = randomSelection1, f = False, fa='Z' )
-    #         self.createMotionPath(val)
-    # @classmethod
-    # def createCarTwo(self, val):
-    #     if (carSlider2 > 1):
-    #         car2 = cmds.textField('NameCar2', q=True, text=True)
-    #         cmds.file(sc +tpFolder+'/fbx/couper_rig.fbx', i = True, type='fbx')
-    #         cmds.rename('Grp_Car_couper', str(car2))
-    #         cmds.pathAnimation('ctrl_Car_couper', c='offsetNurbsCurve1', stu = 0, etu = randomSelection2, f = False, fa='Z' )
-    #         self.createMotionPath(val)
-    # @classmethod
-    # def createCarThree(self, val):
-    #     if (carSlider3 > 1):
-    #         car3 = cmds.textField('NameCar3', q=True, text=True)
-    #         cmds.file(sc +tpFolder+'/fbx/Muscle_rig.fbx', i = True, type='fbx')
-    #         cmds.rename('Grp_Car_Muscle', str(car3))
-    #         cmds.pathAnimation('ctrl_Car_Muscle', c='offsetNurbsCurve2', stu = 0, etu = randomSelection3, f = False, fa='Z' )
-    #         self.createMotionPath(val)
-    # @classmethod
-    # def createCarFour(self, val):
-    #     if (carSlider4 > 1):
-    #         car4 = cmds.textField('NameCar3', q=True, text=True)
-    #         cmds.file(sc +tpFolder+'/fbx/camaro_rig.fbx', i = True, type='fbx')
-    #         cmds.rename('Grp_Car_Camaro', str(car4))
-    #         cmds.pathAnimation('ctrl_Car_Camaro', c='offsetNurbsCurve3', stu = 0, etu = randomSelection3, f = False, fa='Z' )
-    #         self.createMotionPath(val)
     @classmethod
     def createMeta(self):
         cmds.file(sc+tpFolder+'/fbx/meta.fbx', i=True, type='fbx')

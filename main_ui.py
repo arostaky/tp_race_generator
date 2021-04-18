@@ -9,7 +9,6 @@ from lib import curva, car, ui
 modules = [curva, car, ui]
 def reload_it():
   for sub_module in modules:
-    #print ('Reloading %s' % sub_module)
     reload(sub_module)
 reload_it()
 

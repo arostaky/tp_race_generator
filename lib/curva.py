@@ -22,24 +22,11 @@ class pathCreator():
         #obtain the list of active cars:
         for i in range(len(listCars)):
             if(listCars[i]>1):
-                # print('estos son los carros:'+ str(listCars[i]))
                 realListCars.append(listCars[i])
       
         #use the value:
-        # print('estos son los verdaderos carros:'+ str(realListCars))
         amountCars = len(realListCars)
         closedCurve = cmds.closeCurve( 'curve1', ch=True, ps=False, rpo = True )
-        #offset:
-        # if(amountCars == 2):
-        #     off1 = cmds.offsetCurve('curve1', d=2.0)
-        # if(amountCars == 3):
-        #     off1 = cmds.offsetCurve('curve1',d=-2.0)
-        #     off2 = cmds.offsetCurve('curve1',d=2.0)
-        # if(amountCars == 4):
-        #     off1 = cmds.offsetCurve('curve1',d=-2.0)
-        #     off2 = cmds.offsetCurve('curve1',d=2.0)
-        #     off3 = cmds.offsetCurve('curve1',d=4.0)
-        # if(amountCars == 5):
         off1 = cmds.offsetCurve('curve1',d=-2.0)
         off2 = cmds.offsetCurve('curve1',d=2.0)
         off3 = cmds.offsetCurve('curve1',d=4.0)

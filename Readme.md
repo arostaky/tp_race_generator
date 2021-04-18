@@ -20,5 +20,5 @@ print(sc)
   - Run the script: main_ui.py in maya
 
 # ToDo
-
+  - Fix bug for car names
   - Add Color Selection for each car

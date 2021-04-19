@@ -1,5 +1,7 @@
 # Race Generator (Beta)
 
+![race generator](https://github.com/jpdibacco/tp_race_generator/blob/main/cover_presetantion.jpg?raw=true)
+
 Forniture Generator is a Python Script for Maya 2020.
 Group:
 
